@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="idioma">
+        <item>Cambiar idioma</item>
+        <item>Change Language</item>
+        <item>Cambia lingua</item>
+        <item>changer la langue</item>
+    </string-array>
+    <string-array name="saludos">
+        <item>Hola Mundo!</item>
+        <item>Hello World!</item>
+        <item>Ciao mondo</item>
+        <item>salut monde</item>
+    </string-array>
+
+</resources>
