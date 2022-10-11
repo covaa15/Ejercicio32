@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button prueba = findViewById(R.id.prueba);
         TextView texto=findViewById(R.id.texto);
-      // prueba.setOnClickListener(this::onClick);
+        prueba.setOnClickListener(this::onClick);
         cad1=getString(R.string.cadena1);
 
 
@@ -43,11 +43,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-   public void onClick (View v)throws InterruptedException{
+   public void onClick (View v){
 
         Toast.makeText(this,cad1, Toast.LENGTH_SHORT).show();
-        Thread.sleep(1500);//Utilizamos este paso para darles tiempo entre los distintos Toast ya que sino se solaparian
-        Toast.makeText(this,"Has pulsado el botón prueba", Toast.LENGTH_SHORT).show();
+       try {
+           Thread.sleep(1500);//Utilizamos este paso para darles tiempo entre los distintos Toast ya que sino se solaparian
+       } catch (InterruptedException e) {
+
+       }
+       Toast.makeText(this,"Has pulsado el botón prueba", Toast.LENGTH_SHORT).show();
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
